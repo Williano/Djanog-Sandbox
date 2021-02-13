@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third-party django apps
+    'rest_framework',
 
     # Project apps
-    'posts'
+    'posts.apps.PostsConfig',
 ]
 
 MIDDLEWARE = [
