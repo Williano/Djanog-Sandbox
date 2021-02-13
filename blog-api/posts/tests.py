@@ -8,7 +8,7 @@ class PostModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         
-        test_user1 = User.objects.create_user(username="testuser1", password="abc123")
+        test_user1 = User.objects.create_user(username="test_user1", password="abc123")
         test_user1.save()
 
         test_post = Post.objects.create(author=test_user1, title="Blog Title", body="Body content...")
@@ -22,5 +22,5 @@ class PostModelTest(TestCase):
         body = f'{post.body}'
 
         self.assertEqual(author, 'test_user1')
-        self.assertEqual(title, 'Blog title')
+        self.assertEqual(title, 'Blog Title')
         self.assertEqual(body, 'Body content...')
