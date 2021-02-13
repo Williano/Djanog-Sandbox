@@ -130,6 +130,6 @@ STATIC_URL = '/static/'
 # Django REST framework configuration
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.IsAuthenticate',
     ]
 }
