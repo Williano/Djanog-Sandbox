@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     # Third-party django apps
     'rest_framework',
+    'corsheaders',
 
     # Project apps
     'todos',
